@@ -85,7 +85,7 @@ class Register extends React.Component {
                                         if (data.status === "ok") {
                                                 self.props.setUserName(data.username);
                                                 localStorage.setItem("debate", JSON.stringify({"userid":data.userid,"username":data.username, "email":data.email}));
-                                                self.props.changeView('DebateWindow', self.props.debateid);
+                                                self.props.changeView('DebateWindow', 2);
                                         } else {
                                                 self.handleError(data.message);
                                         }
